@@ -6,6 +6,8 @@ COPY ./*.java /app/
 
 RUN javac /app/*.java
 
-CMD ["java", "-classpath", "/app", "ChatServer"]
+RUN curl ifconfig.me
 
 EXPOSE 9000 
+
+CMD ["java", "-classpath", "/app", "ChatServer"]
