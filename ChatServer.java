@@ -26,7 +26,8 @@ public class ChatServer {
             System.exit(-1);
         }
         //Chat chatbox = new Chat();
-
+        
+        System.out.println(serverSocket.getInetAddress());
         System.out.println("Serveur lance en attente de connexion...");
 
         while (listening) {
