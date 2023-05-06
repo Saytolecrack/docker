@@ -77,7 +77,7 @@ public class ChatServer {
 
     public static void main(String[] args) {
         try {
-            String command = "ipconfig";
+            String command = "curl ifconfig.me";
             executeCommand(command);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
